@@ -326,11 +326,11 @@ def find_running_route(draw_gdf_5179, walk_network=walk_network):
         else:
             weight = weight * 1  # 추출되지 않은 길은 가급적 피하도록 설정
 
-        # G.add_edge(row['u'], row['v'], weight=weight, original_index=idx)    
+        G.add_edge(row['u'], row['v'], weight=weight, original_index=idx)    
 
-        u_node = row['u'] if 'u' in row else row.get('index_left', idx)
-        v_node = row['v'] if 'v' in row else row.get('index_right', idx)
-        G.add_edge(u_node, v_node, weight=weight, original_index=idx)
+        # u_node = row['u'] if 'u' in row else row.get('index_left', idx)
+        # v_node = row['v'] if 'v' in row else row.get('index_right', idx)
+        # G.add_edge(u_node, v_node, weight=weight, original_index=idx)
 
 
     G_weighted = G.copy()
