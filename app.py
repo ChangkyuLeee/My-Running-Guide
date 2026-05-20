@@ -597,7 +597,7 @@ with st.sidebar:
     st.header("📋 러닝 코스 조건 설정")
     
     # 위치 입력 (기본값 설정)
-    destination = st.text_input("📍 달리고 싶은 지역/위치 입력 (현재 서울 지역만 가능합니다!)", value="언주역")
+    destination = st.text_input("📍 달리고 싶은 지역/위치 입력\n(현재 서울 지역만 가능합니다!)", value="언주역")
     
     # 거리 선택 (슬라이더)
     target_distance = st.slider("🛣️ 목표 러닝 거리 (km)", min_value=1.0, max_value=20.0, value=5.0, step=0.5)
